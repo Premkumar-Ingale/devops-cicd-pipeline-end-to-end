@@ -6,6 +6,7 @@
    ```
 
 1. By default, python3 is the command to run python commands. to use just python, use "alternatives" command.  (on Control node and Managed host)
+teseressdfghftgdfdf
    ```sh 
    alternatives --set python /usr/bin/python3
    ```

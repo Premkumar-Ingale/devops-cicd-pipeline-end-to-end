@@ -28,9 +28,8 @@ jobs:
           cat /etc/os-release
           sudo whoami
           sudo apt update
-          sudo apt install nginx -y
-          sudo ufw allow 'Nginx HTTP'
-          sudo systemctl start nginx
+          sudo apt install apache2 -y
+          sudo systemctl start apache2
           sudo apt install curl
           curl http://127.0.0.1:80/
           echo "THE END"

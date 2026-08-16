@@ -27,6 +27,8 @@ jobs:
           ls -la
           cat /etc/os-release
           sudo whoami
+          sudo systemctl stop apache2 
+          sudo apt remove apache2
           sudo apt update
           sudo apt install apache2 -y
           sudo sed -i 's/Listen 80/Listen 81/g' /etc/apache2/ports.conf 

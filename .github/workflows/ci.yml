@@ -29,9 +29,10 @@ jobs:
           sudo whoami
           sudo apt update
           sudo apt install apache2 -y
+          sudo sed -i 's/Listen 80/Listen 81/g' /etc/apache2/ports.conf 
           sudo systemctl start apache2
           sudo apt install curl
-          curl http://127.0.0.1:80/
+          curl http://127.0.0.1:81/
           echo "THE END"
 
 
